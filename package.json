@@ -4,7 +4,8 @@
   "description": "API for managing party-game state",
   "main": "index.ts",
   "scripts": {
-    "test": "echo 'bussy'"
+    "dev": "bun --watch run index.ts",
+    "start": "bun run index.ts"
   },
   "author": "dug alcedo",
   "license": "ISC",
