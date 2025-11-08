@@ -17,3 +17,7 @@ export const ENV = process.env.ENV
 if (!process.env.PORT) throw new EnvVarError("PORT")
 if (Number(process.env.PORT) < 1024) throw new EnvVarError("PORT", 'must be a number of at least 1024')
 export const PORT = process.env.PORT
+
+// JWT_SECRET
+if (!process.env.JWT_SECRET) throw new EnvVarError("JWT_SECRET")
+export const JWT_SECRET = process.env.JWT_SECRET

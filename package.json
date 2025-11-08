@@ -13,15 +13,20 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "sequelize": "^6.37.7",
     "sqlite3": "^5.1.7",
-    "ws": "^8.18.3"
+    "uuid": "^13.0.0",
+    "ws": "^8.18.3",
+    "zod": "^4.1.12"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.5",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^24.10.0",
     "@types/sequelize": "^6.12.0",
+    "@types/uuid": "^11.0.0",
     "@types/ws": "^8.18.1"
   },
   "type": "module"

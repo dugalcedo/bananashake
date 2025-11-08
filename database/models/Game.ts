@@ -11,6 +11,15 @@ const Game = db.define(
             unique: true,
             primaryKey: true
         },
+        uuid: {
+            type: DT.TEXT,
+            allowNull: false,
+            unique: true
+        },
+        roomId: {
+            type: DT.TEXT,
+            allowNull: true
+        },
         name: {
             type: DT.TEXT,
             allowNull: false,

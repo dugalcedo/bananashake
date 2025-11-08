@@ -5,6 +5,8 @@ import { PORT } from './env.js'
 
 // controllers
 import testDwssController from './servers/dwssControllers/testDwssController.js'
+import playerRouter from './servers/expressControllers/playerControllers.js'
+import gameRouter from './servers/expressControllers/gameControllers.js'
 
 startServer()
 
@@ -22,6 +24,9 @@ async function startServer() {
     }
 
     // Express routers
+    expressApp.use("/player", playerRouter)
+    expressApp.use("/game", gameRouter)
+
 
     // DWSS routers
     testDwssController(dwss)

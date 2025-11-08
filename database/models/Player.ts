@@ -28,7 +28,10 @@ const Player = db.define(
         },
         game: {
             type: DT.INTEGER,
-            references: 'game',
+            references: {
+                model: 'games',
+                key: 'id'
+            },
             allowNull: false
         },
         isHost: {
